@@ -1,7 +1,7 @@
-<img src="./src/assets/hearthstone.webp" width="30%" alt="Cartão de Visitas">
+<img src="./src/assets/img/hearthstone.webp" width="40%" alt="HearthStone: O Jogo">
 
 # HearthStone: O Jogo
-Projeto de avaliação de aplicação web desenvolvido para processo seletivo de Desenvolvedor Front-end
+Projeto para avaliação de aplicação web desenvolvido para processo seletivo de Desenvolvedor Front-end
 
 ## Conteúdo
 * [Sobre a aplicação](#sobre-a-aplicação)
@@ -15,7 +15,7 @@ Projeto de avaliação de aplicação web desenvolvido para processo seletivo de
 Este projeto de aplicação foi desenvolvido durante um desafio proposto, para atender os requisitos que foram solicitados durante um período de 3 dias.<br />
 A aplicação possui uma tela de manutenção de cartas, cadastro de cartas, contendo um CRUD (inserção, leitura, edição e remoção de dados), que foram armazenados em localStorage.<br/>
 É possível acompanhar e filtrar as cartas através do campo de busca.<br/>
-Pensado na expansão do projeto, foi construido uma aplicação em Angular 12 com validações de usuário, notificações com __Toastr__ e ferramentas projetadas para o futuro da aplicação, como por exemplo: guardião de rotas, serviço de autenticação de usuário para logar/sair da sessão, adição do plugin __Datatables__ dentro do projeto para eventualmente conectar com um servidor back-end, quando for necessário e trabalhar com maior número de dados.<br />
+Pensado na expansão do projeto, foi construido uma aplicação em __Angular 12__ com validações de usuário, notificações com __Toastr__ e ferramentas projetadas para o futuro da aplicação, como por exemplo: guardião de rotas, serviço de autenticação de usuário para logar/sair da sessão, adição do plugin __Datatables__ dentro do projeto para eventualmente conectar com um servidor back-end, quando for necessário e trabalhar com maior número de dados.<br />
 Também foi criado um módulo para organizar a aplicação e um serviço de cartas, para gerenciar o CRUD em localStorage.
 
 ## :hammer_and_wrench: Tecnologias
@@ -35,15 +35,15 @@ Com o servidor rodando, navegue até a rota _/cartas_
 
 * Instrução de instação
 ```bash
-$ cd ..
 $ npm install
+$ ng serve
 $ https://localhost:4200/cartas
 ```
 
 ## :camera_flash: Pré-visualização
-<img src="./src/assets/img/tela_manutencao.png" width="30%" alt="Tela manutenção de cartas">
-<img src="./src/assets/img/tela_cadastro.png" width="30%" alt="Tela cadastro">
-<img src="./src/assets/img/tela_cadastro_validacoes.png" width="30%" alt="Tela cadastro validações">
+<img src="./src/assets/img/tela_manutencao.png" width="100%" alt="Tela manutenção de cartas">
+<img src="./src/assets/img/tela_cadastro.png" width="100%" alt="Tela cadastro">
+<img src="./src/assets/img/tela_cadastro_validacoes.png" width="100%" alt="Tela cadastro validações">
 
 ## :balance_scale: Licença
 Este projeto está licenciado sob a [licença MIT](LICENSE).
