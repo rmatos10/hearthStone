@@ -1,0 +1,129 @@
+<section class="content">
+    <div class="row alinhamento-vertical">
+        <div class="col-8">
+            <div class="card mb-2">
+                <div class="card-body logomarca">
+                    <h5 class="card-title">
+                        <img src="../assets/img/hearthstone.webp" alt="HearthStone Logo">
+                    </h5>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title d-flex justify-content-between">
+                        <span>Nova Carta</span>
+                    </h5>
+                    <form #cartaForm="ngForm">
+                        <div class="row g-3 align-items-center mb-2">
+                            <div class="col-3">
+                                <label for="nome" class="col-form-label">Nome</label>
+                            </div>
+                            <div class="col-4">
+                                <input type="text" class="form-control" id="nome" name="nome" [(ngModel)]="carta.nome" placeholder="Nome da carta" required
+                                    [ngClass]="{'is-invalid': !nomeCarta.valid && nomeCarta.touched}" #nomeCarta="ngModel"  placeholder="Nome da carta">
+                            </div>
+                            <div class="col-4">
+                                <div class="invalid-feedback d-block" *ngIf="!nomeCarta.valid && nomeCarta.touched">
+                                    O campo nome da carta é obrigatório.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-3 align-items-center mb-2">
+                            <div class="col-3">
+                                <label for="textarea" class="col-form-label">Descrição</label>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Informe a descrição" id="textArea" name="textArea" [(ngModel)]="carta.descricao" style="height: 200px"
+                                        [ngClass]="{'is-invalid': !descricaoCarta.valid && descricaoCarta.touched}" #descricaoCarta="ngModel"></textarea>
+                                    <label for="textArea"></label>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="invalid-feedback d-block" *ngIf="!descricaoCarta.valid && descricaoCarta.touched">
+                                    O campo descrição é obrigatório.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-3 align-items-center mb-2">
+                            <div class="col-3">
+                                <label for="ataque" class="col-form-label">Ataque</label>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control" id="ataque" name="ataque" [(ngModel)]="carta.ataque" min="0" max="10"
+                                    [ngClass]="{'is-invalid': !ataqueCarta.valid && ataqueCarta.touched}" #ataqueCarta="ngModel"  placeholder="Ataque">
+                            </div>
+                            <div class="col-4">
+                                <small class="d-block">
+                                    O campo ataque pode ser de 0 até 10.
+                                </small>
+                                <div class="invalid-feedback d-block" *ngIf="!ataqueCarta.valid && ataqueCarta.touched">
+                                    O campo ataque está inválido.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-3 align-items-center mb-2">
+                            <div class="col-3">
+                                <label for="defesa" class="col-form-label">Defesa</label>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control" id="defesa" name="defesa" [(ngModel)]="carta.defesa" min="0" max="10"  placeholder="Defesa"
+                                    [ngClass]="{'is-invalid': !defesaCarta.valid && defesaCarta.touched}" #defesaCarta="ngModel">
+                            </div>
+                            <div class="col-4">
+                                <small class="d-block">
+                                    O campo defesa pode ser de 0 até 10.
+                                </small>
+                                <div class="invalid-feedback d-block" *ngIf="!defesaCarta.valid && defesaCarta.touched">
+                                    O campo defesa está inválido.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-3 align-items-center mb-2">
+                            <div class="col-3">
+                                <label for="ataque" class="col-form-label">Tipo</label>
+                            </div>
+                            <div class="col-4">
+                                <select class="form-select" aria-label="Selecione o Tipo" id="tipo" name="tipo" [(ngModel)]="carta.tipo" placeholder="Selecione"
+                                    [ngClass]="{'is-invalid': !tipoCarta.valid && tipoCarta.touched}" #tipoCarta="ngModel">
+                                    <option value="" [ngValue]="undefined" selected>Selecione</option>
+                                    <option value="Magia">Magia</option>
+                                    <option value="Criatura">Criatura</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <div class="invalid-feedback d-block" *ngIf="!tipoCarta.valid && tipoCarta.touched">
+                                    O campo tipo é obrigatório.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-3 align-items-center mb-2">
+                            <div class="col-3">
+                                <label for="ataque" class="col-form-label">Classe</label>
+                            </div>
+                            <div class="col-4">
+                                <select class="form-select" aria-label="Selecione a Classe" id="classe" name="classe" [(ngModel)]="carta.classe"
+                                    [ngClass]="{'is-invalid': !classeCarta.valid && classeCarta.touched}" #classeCarta="ngModel"  placeholder="Selecione">
+                                    <option value="" [ngValue]="undefined" selected>Selecione</option>
+                                    <option value="Mago">Mago</option>
+                                    <option value="Paladino">Paladino</option>
+                                    <option value="Druida">Druida</option>
+                                    <option value="Qualquer">Qualquer</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <div class="invalid-feedback d-block" *ngIf="!classeCarta.valid && classeCarta.touched">
+                                    O campo classe é obrigatório.
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer p-2">
+                    <button type="submit" class="btn btn-success me-2 w-25" [routerLink]="['/cartas', 'novo']" (click)="salvar()" [disabled]="!cartaForm.valid">Salvar</button>
+                    <button type="button" class="btn btn-warning w-25" [routerLink]="['/cartass', '']" (click)="cancelar()">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

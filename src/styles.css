@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'ngx-toastr/toastr';
+
+.alinhamento-vertical {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.logomarca {
+    background: #5E5647;
+    border-radius: 5px;
+}
+
+.logomarca h5 {
+    display: flex;
+    justify-content: center;
+}
+
+.logomarca img {
+    max-width: 350px;
+}

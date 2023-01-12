@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "nome": "Companheiro Animal",
+            "descricao": "Companheiro Animal devido à sua versatilidade em qualquer deck de Caçador, mas este card realmente mostra seu poder quando é usado para evocar um dos ajudantes de Rexxar diretamente das páginas de World of Warcraft! Além disso, a arte é absolutamente incrível. Rexxar não vai a lugar algum sem sua fiel companheira ursa “Mirsha” e a arte enfatiza a ligação entre o meio-orc e o animal.",
+            "ataque": 7,
+            "defesa": 5,
+            "tipo": "Criatura",
+            "classe": "Caçador"
+        },
+        {
+            "id": 2,
+            "nome": "Companheiro Animal",
+            "descricao": "Companheiro Animal devido à sua versatilidade em qualquer deck de Caçador, mas este card realmente mostra seu poder quando é usado para evocar um dos ajudantes de Rexxar diretamente das páginas de World of Warcraft! Além disso, a arte é absolutamente incrível. Rexxar não vai a lugar algum sem sua fiel companheira ursa “Mirsha” e a arte enfatiza a ligação entre o meio-orc e o animal.",
+            "ataque": 7,
+            "defesa": 5,
+            "tipo": "Criatura",
+            "classe": "Caçador"
+        }
+    ],
+    "recordsTotal": 2,
+    "recordsFiltered": 2
+}
