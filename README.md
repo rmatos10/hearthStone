@@ -30,7 +30,7 @@ Também foi criado um módulo para organizar a aplicação e um serviço de cart
 
 ## :car: Iniciando a aplicação
 Baixe o repositório com git clone e entre na pasta do projeto.<br/>
-Instale a aplicação através do comando _npm install_ e logo em seguira rode o servidor através do _ng serve_. É necessário ter o pacote Node instalado na máquina.<br/>
+Instale a aplicação através do comando _npm install_ e logo em seguida rode o servidor através do _ng serve_. É necessário ter o pacote Node instalado na máquina.<br/>
 Com o servidor rodando, navegue até a rota _/cartas_
 
 * Instrução de instação
